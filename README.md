@@ -1,7 +1,7 @@
 # VersionIncrementer
 
 In launchSettings.json change commandLineArgs to:
-- Feature
+- "Feature"
 - " \"Bug Fix\""
 
 Usually, layers (Application, Domain.. etc) are placed in separate projects. However, for simplicity, I placed them in folders. 
