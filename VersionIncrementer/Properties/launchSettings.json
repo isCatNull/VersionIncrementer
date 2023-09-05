@@ -2,7 +2,7 @@
   "profiles": {
     "VersionIncrementer": {
       "commandName": "Project",
-      "commandLineArgs": "Feature"
+      "commandLineArgs": "\"Bug Fix\""
     }
   }
 }
