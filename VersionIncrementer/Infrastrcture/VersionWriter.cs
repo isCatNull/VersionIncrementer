@@ -9,7 +9,7 @@ public class VersionWriter : IVersionWriter
         var path = Path.Combine(Directory.GetCurrentDirectory(),
             "..\\..\\..\\..\\Data\\ProductInfo.cs");
 
-        using var streamWriter = new StreamWriter(path);
+        await using var streamWriter = new StreamWriter(path);
 
         await streamWriter.WriteAsync(versionNumber);
     }

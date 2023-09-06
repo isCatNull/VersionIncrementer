@@ -13,7 +13,7 @@ services.AddTransient<IVersionValidator, VersionValidator>();
 services.AddTransient<IIncrementerService, IncrementerService>();
 services.AddTransient<IVersionWriter, VersionWriter>();
 
-await using var serviceProvider = services.BuildServiceProvider();
+await using var serviceProvider = services.BuildServiceProvider(validateScopes: true);
 using var scope = serviceProvider.CreateScope();
 
 var inputValidator = scope.ServiceProvider.GetRequiredService<IInputValidator>();
@@ -44,7 +44,7 @@ try
     else
     {
         Console.Error.WriteLine("Unsupported release type");
-        return;
+        return 1;
     }
 
     await versionWriter.WriteAsync(updatedVersion);
@@ -52,4 +52,7 @@ try
 catch(Exception ex)
 {
     Console.Error.WriteLine($"Something went wrong: {ex.Message}");
+    return 1;
 }
+
+return 0;

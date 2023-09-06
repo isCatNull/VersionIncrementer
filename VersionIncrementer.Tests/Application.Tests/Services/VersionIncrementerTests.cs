@@ -6,7 +6,7 @@ namespace VersionIncrementer.Tests.Application.Tests.Services;
 public class VersionIncrementerTests
 {
     [Theory]
-    [InlineData("1.0.1.3", "1.0.1.4")]
+    [InlineData("1.0.20.3", "1.0.20.4")]
     [InlineData("1.0.1.100", "1.0.1.101")]
     [InlineData("1.0.1.32", "1.0.1.33")]
     [InlineData("1.0.1.0", "1.0.1.1")]
