@@ -10,3 +10,4 @@ Usually, layers (Application, Domain.. etc) are placed in separate projects. How
 - Add custom exceptions, handling and throwing could be made better
 - IncrementerService can be made more readable
 - Path to ProductInfo can be picked up from config
+- Use fluent validator, perhaps cover more cases
