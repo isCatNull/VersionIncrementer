@@ -11,3 +11,4 @@ Usually, layers (Application, Domain.. etc) are placed in separate projects. How
 - IncrementerService can be made more readable
 - Path to ProductInfo can be picked up from config
 - Use fluent validator, perhaps cover more cases
+- Make input reader more robust by making it case insensitive (currently it has to be exact match)
