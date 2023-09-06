@@ -2,9 +2,11 @@
 
 I have placed ProductInfo.cs in the Data folder, it is picked up from there.
 
-In launchSettings.json change commandLineArgs to:
+If running from VisualStudio in launchSettings.json change commandLineArgs to:
 - "Feature"
 - " \"Bug Fix\""
+
+Or if you run from command line just provide those arguments.
 
 Usually, layers (Application, Domain.. etc) are placed in separate projects. However, for simplicity, I placed them in folders. 
 
