@@ -1,5 +1,7 @@
 # VersionIncrementer
 
+I have placed ProductInfo.cs in the Data folder, it is picked up from there.
+
 In launchSettings.json change commandLineArgs to:
 - "Feature"
 - " \"Bug Fix\""
